@@ -1,0 +1,14 @@
+.autocomplete-dropdown-container {
+    position: relative;
+  }
+  
+  .suggestion-item {
+    font-size: 28px;
+    padding: 0px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item.active {
+    background-color: #e6e6e6;
+  }
+  

@@ -1,0 +1,312 @@
+.body{
+    background-color: rgb(90, 90, 90);
+    background-image: url("traffic_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 1124px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6rem;
+    margin-bottom: 10rem;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:  76px;
+    font-weight: 600;
+    animation: 1.25s fadeInUp;
+    min-height: max-content;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.iphone-banner{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 6rem;
+  margin-bottom: 10rem;
+  font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 76px;
+  font-weight: 600;
+  animation: 1.25s fadeInUp;
+  min-height: max-content;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.new-section{
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+  .body {
+    height: 100vh;
+  }
+
+  .banner {
+    padding-top: 0rem;
+    /* Further adjusted padding for laptops */
+    margin-bottom: 1rem;
+    /* Further adjusted margin for laptops */
+  }
+
+  .iphone-holder {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .fadeInUp-animation {
+    animation: 1.25s fadeInUp;
+  }
+
+  .iphone-x {
+    position: relative;
+    z-index: 1;
+    height: 694px;
+    width: 342px;
+  }
+  .iphone-x *, .iphone-x *::before, .iphone-x *::after {
+    box-sizing: border-box;
+    display: block;
+  }
+  .iphone-x .side {
+    background: #1c1c1c;
+    border-radius: 54px;
+    box-shadow: inset 0 0 2px 2px dimgrey, inset 0 0 0 6px #e2e3e9, 0px -1px 13px 9px rgba(255,255,255,0.8) inset;
+    height: 694px;
+    padding: 15px 22px;
+    width: 342px;
+    z-index: 1;
+  }
+  .iphone-x .screen {
+    background:#000;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 33px;
+    position: relative;
+    height: 652px;
+    width: 300px;
+    margin-left: -1px;
+    margin-top: 6px;
+    z-index:198;
+    overflow:hidden;
+  }
+  video {
+    height: 700px;
+    width: 350px;
+    margin-top: -30px;
+    margin-left:-10px;
+  }
+  .iphone-x .line::after, .iphone-x .line::before {
+    content: "";
+    position: absolute;
+    border: solid rgba(68, 68, 68, 0.25);
+    border-width: 0 6px;
+    height: 5px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+  }
+  .iphone-x .line::after {
+    top: 68px;
+  }
+  .iphone-x .line::before {
+    bottom: 68px;
+  }
+  .iphone-x .header {
+    background: #1c1c1c;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    height: 24px;
+    left: 50%;
+    margin-left: -82px;
+    position: absolute;
+    top: 15px;
+    width: 164px;
+    z-index: 199;
+  }
+  .iphone-x .sensor-1::after, .iphone-x .sensor-1::before {
+    content: "";
+    position: absolute;
+  }
+  .iphone-x .sensor-1::after {
+    background: #222;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    left: 1%;
+    margin-left: 10px;
+    top: 3px;
+  }
+  .iphone-x .sensor-1::before {
+    background: #222;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    left: 10%;
+    margin-left: 20px;
+    top: 3px;
+  }
+  .iphone-x .sensor-2::after, .iphone-x .sensor-2::before {
+    content: "";
+    position: absolute;
+  }
+  .iphone-x .sensor-2::before {
+    background: #333;
+    border-radius: 2.5px;
+    height: 5px;
+    width: 40px;
+    left: 50%;
+    margin-left: -20px;
+    top: 7px;
+  }
+  .iphone-x .sensor-3::after, .iphone-x .sensor-3::before {
+    content: "";
+    position: absolute;
+  }
+  .iphone-x .sensor-3::before {
+    background: #444;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    left: 50%;
+    margin-left: 35px;
+    top: 3px;
+    box-shadow:0px 0px 5px 2px navy inset
+  }
+  .iphone-x .sensor-3::after {
+    background: #222;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    left: 65%;
+    margin-left: 33px;
+  }
+  .iphone-x .volume-button {
+    background: #c8cacb;
+    height: 26px;
+    left: -2px;
+    position: absolute;
+    top: 92px;
+    width: 3px;
+  }
+  .iphone-x .volume-button::after, .iphone-x .volume-button::before {
+    content: "";
+    position: absolute;
+    background: #c8cacb;
+    height: 50px;
+    left: 0;
+    width: 3px;
+  }
+  .iphone-x .volume-button::after {
+    top: 48px;
+  }
+  .iphone-x .volume-button::before {
+    top: 112px;
+  }
+  .iphone-x .power-button {
+    background: #c8cacb;
+    height: 80px;
+    right: -2px;
+    position: absolute;
+    top: 160px;
+    width: 3px;
+  }
+
+.iphone-holder{
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+}
+
+.camera {
+  width: 10.5px; /* 7px * 1.5 */
+  height: 10.5px; /* 7px * 1.5 */
+  border-radius: 100%;
+  top: -.3rem;
+  position: relative;
+  margin: 0 auto;
+  background: rgba(28, 28, 28, 1);
+  background: -moz-linear-gradient(45deg, rgba(28, 28, 28, 1) 0%, rgba(51, 51, 51, 1) 39%, rgba(43, 43, 43, 1) 76%, rgba(19, 19, 19, 1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(28, 28, 28, 1)), color-stop(39%, rgba(51, 51, 51, 1)), color-stop(76%, rgba(43, 43, 43, 1)), color-stop(100%, rgba(19, 19, 19, 1)));
+  background: -webkit-linear-gradient(45deg, rgba(28, 28, 28, 1) 0%, rgba(51, 51, 51, 1) 39%, rgba(43, 43, 43, 1) 76%, rgba(19, 19, 19, 1) 100%);
+  background: -o-linear-gradient(45deg, rgba(28, 28, 28, 1) 0%, rgba(51, 51, 51, 1) 39%, rgba(43, 43, 43, 1) 76%, rgba(19, 19, 19, 1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(28, 28, 28, 1) 0%, rgba(51, 51, 51, 1) 39%, rgba(43, 43, 43, 1) 76%, rgba(19, 19, 19, 1) 100%);
+  background: linear-gradient(45deg, rgba(28, 28, 28, 1) 0%, rgba(51, 51, 51, 1) 39%, rgba(43, 43, 43, 1) 76%, rgba(19, 19, 19, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#131313', GradientType=1);
+}
+
+.mac-screen {
+  background-color: #476;
+  width: 1035px; /* 690px * 1.5 */
+  height: 675px; /* 450px * 1.5 */
+  margin: 0 auto;
+  margin-top: 15rem; /* 60px * 1.5 */
+  padding: 15px; /* 10px * 1.5 */
+  border-top-right-radius: 45px; /* 30px * 1.5 */
+  border-top-left-radius: 45px; /* 30px * 1.5 */
+  box-shadow: inset 0px 0px 0px 29px #171717;
+  border-top: 3px solid silver;
+  border-right: 3px solid silver;
+  border-left: 3px solid silver;
+  background-image: url(http://i66.tinypic.com/29vbeo4.jpg);
+}
+
+.mac-body {
+  width: 1320px; /* 880px * 1.5 */
+  height: 30px; /* 20px * 1.5 */
+  background-color: whitesmoke;
+  background: rgba(82, 81, 82, 1);
+  background: -moz-linear-gradient(left, rgba(82, 81, 82, 1) 0%, rgba(234, 234, 234, 1) 3%, rgba(222, 222, 222, 1) 23%, rgba(234, 234, 234, 1) 53%, rgba(166, 164, 166, 1) 88%, rgba(234, 234, 234, 1) 97%, rgba(82, 81, 82, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(82, 82, 82, 1)), color-stop(3%, rgba(234, 234, 234, 1)), color-stop(23%, rgba(222, 222, 222, 1)), color-stop(53%, rgba(234, 234, 234, 1)), color-stop(88%, rgba(166, 164, 166, 1)), color-stop(97%, rgba(234, 234, 234, 1)), color-stop(100%, rgba(82, 81, 82, 1)));
+  background: -webkit-linear-gradient(left, rgba(82, 81, 82, 1) 0%, rgba(234, 234, 234, 1) 3%, rgba(222, 222, 222, 1) 23%, rgba(234, 234, 234, 1) 53%, rgba(166, 164, 166, 1) 88%, rgba(234, 234, 234, 1) 97%, rgba(82, 81, 82, 1) 100%);
+  background: -o-linear-gradient(left, rgba(82, 81, 82, 1) 0%, rgba(234, 234, 234, 1) 3%, rgba(222, 222, 222, 1) 23%, rgba(234, 234, 234, 1) 53%, rgba(166, 164, 166, 1) 88%, rgba(234, 234, 234, 1) 97%, rgba(82, 81, 82, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(82, 81, 82, 1) 0%, rgba(234, 234, 234, 1) 3%, rgba(222, 222, 222, 1) 23%, rgba(234, 234, 234, 1) 53%, rgba(166, 164, 166, 1) 88%, rgba(234, 234, 234, 1) 97%, rgba(82, 81, 82, 1) 100%);
+  background: linear-gradient(to right, rgba(82, 81, 82, 1) 0%, rgba(234, 234, 234, 1) 3%, rgba(222, 222, 222, 1) 23%, rgba(234, 234, 234, 1) 53%, rgba(166, 164, 166, 1) 88%, rgba(234, 234, 234, 1) 97%, rgba(82, 81, 82, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#525152', endColorstr='#525152', GradientType=1);
+  margin: 0 auto;
+  border-bottom-left-radius: 37.5px; /* 25px * 1.5 */
+  border-bottom-right-radius: 37.5px; /* 25px * 1.5 */
+  border-bottom: 13.5px solid #737373; /* 9px * 1.5 */
+  box-shadow: 1.5px 3px 7.5px 1.5px;
+}
+
+.lid {
+  width: 180px; /* 120px * 1.5 */
+  height: 15px; /* 10px * 1.5 */
+  background-color: red;
+  margin: 0 auto;
+  border-bottom-right-radius: 30px; /* 20px * 1.5 */
+  border-bottom-left-radius: 30px; /* 20px * 1.5 */
+  background: rgba(234, 234, 234, 1);
+  background: -moz-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(186, 186, 186, 1) 77%, rgba(120, 120, 120, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234, 234, 234, 1)), color-stop(77%, rgba(186, 186, 186, 1)), color-stop(100%, rgba(120, 120, 120, 1)));
+  background: -webkit-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(186, 186, 186, 1) 77%, rgba(120, 120, 120, 1) 100%);
+  background: -o-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(186, 186, 186, 1) 77%, rgba(120, 120, 120, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(186, 186, 186, 1) 77%, rgba(120, 120, 120, 1) 100%);
+  background: linear-gradient(to bottom, rgba(234, 234, 234, 1) 0%, rgba(186, 186, 186, 1) 77%, rgba(120, 120, 120, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#787878', GradientType=0);
+}
+
+.webpage{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-left: 13px;
+}
